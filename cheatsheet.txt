@@ -17,3 +17,12 @@ Avoid gulp compiling files
   for example a files that only contain variables
   we need to add "_" after the file name
   "_variables.scss"
+
+Import Oder:
+  while importing the scss module, order matter
+    @import "variables";
+    @import "base";
+  here the "base" module beneficiate from the variables declared
+  in "variables" module that is because the import are read from
+  top to bottom
+
