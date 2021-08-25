@@ -1,0 +1,19 @@
+
+Variable:
+  to create a Variable:
+    $primary: #3299ee;
+  to use a Variable:
+    color: $primary;
+
+Partials:
+  Partials is a way to split our code to multiple different files
+  like CSS module
+  to import Partials:
+    at the top a scss files
+    @import './path'
+
+Avoid gulp compiling files
+  To avoid the gulp compiler to compile files
+  for example a files that only contain variables
+  we need to add "_" after the file name
+  "_variables.scss"

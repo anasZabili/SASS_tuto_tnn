@@ -1,6 +1,0 @@
-
-Variable:
-  to create a Variable:
-    $primary: #3299ee;
-  to use a Variable:
-    color: $primary;

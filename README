@@ -1,2 +1,4 @@
 To compile the scss file
   run cmd "gulp"
+
+My personnel notes about this course are available at ./cheatSheet.txt
