@@ -26,3 +26,22 @@ Import Oder:
   in "variables" module that is because the import are read from
   top to bottom
 
+Math Operation:
+  in SASS it's possible to use math operator to interact 
+  with our constant 
+    Multiple:
+      $font-size-sm: $base-font-size * 0.75;
+    Divide:
+      To divide we need to import at the top of the 
+      file where we use the division the math module
+        @use "sass:math";
+      and then we can use the math method
+        border-radius: math.div(base-border-radius, 4);
+
+Debugging:
+  To debug a SASS file we can use the debug directive which 
+  print a value on the console
+    @debug "hello world";
+    @debug $base-border-radius * 4;
+
+
