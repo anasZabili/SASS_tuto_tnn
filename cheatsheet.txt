@@ -44,4 +44,46 @@ Debugging:
     @debug "hello world";
     @debug $base-border-radius * 4;
 
+Maps:
+  Create Maps:
+    $colors: (
+      "primary": $primary,
+      "secondary": $secondary,
+      "error": $error,
+      "info": $info,
+      "blue": #1919e6,
+      "red": #e61919,
+      "yellow": #e6e619,
+      "green": #19e635,
+      "orange": #ffa600,
+      "purple": #9900ff,
+      "gray": #808080,
+      "black": black,
+      "white": white,
+    );
+
+  Access Maps:
+    @debug map-get($map: $colors, $key: "purple");
+    or 
+    @debug map-get($colors, "purple");
+
+  Check if a key is in the Maps:
+    @debug map-has-key($colors, "secondary");
+
+  Remove element ($map, $key): 
+  
+    @debug map-remove($colors, "primary");
+
+
+  Add elements to the map ($map, $map):
+    @debug map-merge(
+      $colors,
+      (
+        "pink": #ffc0cb,
+      )
+    );
+
+
+
+  
 
